@@ -13,5 +13,8 @@ namespace ChessEngine.Core.Pieces
             Color = color;
             Position = position;
         }
+
+        public abstract bool IsValidMove(Move move, IBoard board);
+        public abstract Move[] GetPossibleMoves(IBoard board);
     }
 }
