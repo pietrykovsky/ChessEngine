@@ -1,16 +1,17 @@
 using ChessEngine.Core.Enumerators;
 using ChessEngine.Core.Models;
 
-namespace ChessEngine.Core.Pieces;
-
-internal abstract class Piece
+namespace ChessEngine.Core.Pieces
 {
-    public Color Color { get; }
-    public Position Position { get; set; }
-
-    protected Piece(Color color, Position position)
+    internal abstract class Piece
     {
-        Color = color;
-        Position = position;
+        public Color Color { get; }
+        public Position Position { get; set; }
+
+        protected Piece(Color color, Position position)
+        {
+            Color = color;
+            Position = position;
+        }
     }
 }

@@ -3,7 +3,7 @@ namespace ChessEngine.Core.Models
     /// <summary>
     /// Represents a position on a chess board.
     /// </summary>
-    public struct Position
+    public readonly struct Position
     {
         /// <summary>
         /// Gets the horizontal coordinate (file) of the position.
